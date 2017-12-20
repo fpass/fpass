@@ -1,0 +1,5 @@
+.idea/
+node_modules/
+.nuxt/
+dist/
+.DS_store

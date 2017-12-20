@@ -1,0 +1,15 @@
+{
+  "name": "web",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt generate && ./deploy.sh"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0-rc11"
+  },
+  "devDependencies": {
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "offline-plugin": "^4.8.5"
+  }
+}
