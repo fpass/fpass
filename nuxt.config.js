@@ -6,10 +6,12 @@ module.exports = {
     '~/modules/pwa'
   ],
   plugins: [
-    {src: '~/plugins/pwa', ssr: false}
+    {src: '~/plugins/pwa', ssr: false},
+    {src: '~/plugins/fastclick', ssr: false},
+    {src: '~/plugins/muse-ui'}
   ],
   build: {
-    extractCSS: false,
+    extractCSS: true,
     publicPath: '/'
   }
 }
