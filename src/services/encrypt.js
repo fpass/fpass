@@ -1,6 +1,9 @@
 import sha512 from 'js-sha512'
 
 export default ({domain, salt, length}) => {
+  if (domain == null || salt == null || length <= 2) {
+    return ''
+  }
   let ret = Array.apply(null, {length: 3})
     .reduce(value => sha512(value + salt), domain)
     .substr(0, length)
