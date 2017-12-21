@@ -11,6 +11,7 @@ const rules = [
   {name: '拉钩', domain: 'lagou.com', length: 16},
   {name: '阿里云企业邮', domain: 'qiye.aliyun.com', length: 32},
   {name: '淘宝', domain: 'taobao.com', length: 20},
+  {name: '京东', domain: 'jd.com', length: 20},
 ]
 
 rules.sort((a, b) => a.domain <= b.domain ? -1 : 1)
