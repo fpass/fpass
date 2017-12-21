@@ -23,6 +23,6 @@ const rules = [
 ]
 
 rules.sort((a, b) => a.domain <= b.domain ? -1 : 1)
-rules.push({name: '没有我想要的', domain: 'not what i want'})
+rules.push({name: '其它', domain: 'other'})
 
 export default rules
