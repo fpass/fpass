@@ -103,6 +103,12 @@
 </script>
 
 <style lang="less">
+  html,
+  body,
+  #__nuxt {
+    height: 100%;
+  }
+
   body {
     background: #f3f3f3;
   }

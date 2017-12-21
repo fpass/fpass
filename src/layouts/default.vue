@@ -15,11 +15,3 @@
     }
   }
 </script>
-
-<style lang="less">
-  html,
-  body,
-  #__nuxt {
-    height: 100%;
-  }
-</style>
