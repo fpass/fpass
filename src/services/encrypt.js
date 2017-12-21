@@ -1,7 +1,7 @@
 import sha512 from 'js-sha512'
 
 export default ({domain, salt, length}) => {
-  if (domain == null || salt == null || length <= 2) {
+  if (!domain || !salt || length <= 2) {
     return ''
   }
   let ret = Array.apply(null, {length: 3})

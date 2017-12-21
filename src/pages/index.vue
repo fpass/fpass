@@ -59,7 +59,7 @@
     computed: {
       encrypt () {
         const rule = this.rules[this.ruleIndex]
-        if (!rule) {
+        if (!rule || !this.password) {
           return ''
         }
         if (this.ruleIndex === this.rules.length - 1) {
