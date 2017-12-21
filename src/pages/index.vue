@@ -77,11 +77,19 @@
     },
     mounted () {
       this.initClipboard()
+      this.initEnter()
     },
     methods: {
       initClipboard () {
         new Clipboard(this.$el.querySelector('.js-ok'), {
           text: () => this.encrypt
+        })
+      },
+      initEnter () {
+        window.addEventListener('keyup', event => {
+          if (event.keyCode === 13) {
+            this.clickOk()
+          }
         })
       },
       clickOk () {
