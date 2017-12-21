@@ -30,9 +30,8 @@
         <mu-raised-button class="js-ok" label="OK" :disabled="!encrypt" primary @click="clickOk" />
       </div>
     </mu-card>
-    <mu-dialog :open="!!dialog.content" :title="dialog.title">
-      {{dialog.content}}
-      <mu-flat-button label="OK" slot="actions" primary @click="dialog.content = ''" />
+    <mu-dialog :open="!!dialog" :title="dialog">
+      <mu-flat-button label="OK" slot="actions" primary @click="dialog = ''" />
     </mu-dialog>
   </div>
 </template>
@@ -48,10 +47,7 @@
         rules,
         ruleIndex: '',
         password: '',
-        dialog: {
-          title: '',
-          content: ''
-        },
+        dialog: '',
         domain: '',
         length: ''
       }
@@ -77,7 +73,7 @@
     },
     mounted () {
       this.initClipboard()
-      this.initEnter()
+      this.initKeyup()
     },
     methods: {
       initClipboard () {
@@ -85,18 +81,20 @@
           text: () => this.encrypt
         })
       },
-      initEnter () {
+      initKeyup () {
         window.addEventListener('keyup', event => {
-          if (event.keyCode === 13) {
-            this.clickOk()
+          switch (event.keyCode) {
+            case 13:
+              this.clickOk()
+              break;
+            case 27:
+              this.dialog = ''
+              break;
           }
         })
       },
       clickOk () {
-        this.dialog = {
-          title: 'The password has been copied to the clipboard',
-          content: this.encrypt
-        }
+        this.dialog = 'The password has been copied to the clipboard'
       }
     }
   }
@@ -132,7 +130,6 @@
   .mu-dialog-body {
     word-break: break-all;
     word-wrap: break-word;
-    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, 'Courier New', 'lucida console', Courier, monospace;
   }
 
   .wrap {
