@@ -132,6 +132,7 @@
   .mu-dialog-body {
     word-break: break-all;
     word-wrap: break-word;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, 'Courier New', 'lucida console', Courier, monospace;
   }
 
   .wrap {
