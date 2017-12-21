@@ -103,12 +103,20 @@
 </script>
 
 <style lang="less">
+  body {
+    background: #f3f3f3;
+  }
+
   #__nuxt {
     display: flex;
     align-items: center;
     justify-content: center;
     user-select: none;
-    background: #f3f3f3;
+    min-height: 550px;
+  }
+
+  .mu-popover {
+    overflow: auto;
   }
 
   .mu-dialog {
@@ -119,14 +127,12 @@
     word-break: break-all;
     word-wrap: break-word;
   }
-</style>
 
-<style lang="less" scoped>
   .wrap {
     width: 100%;
-    padding: 0 15px;
     max-width: 750px;
     min-width: 320px;
+    padding: 0 15px;
   }
 
   .github {
