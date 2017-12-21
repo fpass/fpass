@@ -1,4 +1,6 @@
 const rules = [
+  {name: '优酷', domain: 'youku.com', length: 16},
+  {name: 'Steam', domain: 'store.steampowered.com', length: 64},
   {name: '腾讯QQ', domain: 'qq.com', length: 16},
   {name: '微信', domain: 'wx.qq.com', length: 16},
   {name: 'GitHub', domain: 'github.com', length: 72},
