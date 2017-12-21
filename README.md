@@ -7,4 +7,4 @@
 ```
 
 - [x] only need a unique password
-- [x] prevent [collision attack](https://en.wikipedia.org/wiki/Collision_attack)
+- [x] prevent account credential enumeration attack
