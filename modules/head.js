@@ -4,7 +4,7 @@ module.exports = function (moduleOptions) {
     meta: [
       {charset: 'utf-8'},
       {'http-equiv': 'x-ua-compatible', content: 'ie=edge'},
-      {name: 'description', content: 'final pass webapp'},
+      {name: 'description', content: 'final pass website'},
       {name: 'renderer', content: 'webkit'},
       {name: 'apple-mobile-web-app-capable', content: 'yes'},
       {name: 'apple-mobile-web-app-status-bar-style', content: 'black'},
