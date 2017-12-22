@@ -7,7 +7,7 @@
   "dependencies": {
     "clipboard": "^1.7.1",
     "fastclick": "^1.0.6",
-    "js-sha512": "^0.7.0",
+    "js-sha512": "^0.7.1",
     "muse-ui": "^2.1.0",
     "nuxt": "^1.0.0-rc11"
   },
