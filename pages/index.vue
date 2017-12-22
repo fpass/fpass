@@ -72,13 +72,14 @@
       }
     },
     mounted () {
+      this.jsOk = this.$el.querySelector('.js-ok')
       this.clipboard()
       this.keyup()
       this.scrollIntoView()
     },
     methods: {
       clipboard () {
-        new Clipboard(this.$el.querySelector('.js-ok'), {
+        new Clipboard(this.jsOk, {
           text: () => this.encrypt
         })
       },
@@ -86,7 +87,7 @@
         window.addEventListener('keyup', event => {
           switch (event.keyCode) {
             case 13:
-              this.clickOk()
+              this.jsOk.click()
               break
             case 27:
               this.dialog = ''
