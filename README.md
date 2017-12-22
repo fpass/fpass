@@ -14,6 +14,7 @@ https://fpass.github.io
 
 - [x] only need a unique password
 - [x] prevent account credential enumeration attack
+- [x] prevent social engineering database attack
 
 ## Contributors
 
