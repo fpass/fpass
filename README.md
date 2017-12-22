@@ -52,4 +52,4 @@ https://fpass.github.io
 
 [GPL-3.0](https://github.com/fpass/fpass/blob/master/LICENSE)
 
-Copyright (c) 2017 fpass
+Copyright © 2017 fpass
