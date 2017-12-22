@@ -21,17 +21,17 @@ https://fpass.github.io
   <tr>
     <td align="center">
       <a href="https://github.com/zhuweiyou">
-        <img width="150" src="https://avatars3.githubusercontent.com/u/8413791?s=460&v=4" alt="avatar">
+        <img width="100" src="https://avatars3.githubusercontent.com/u/8413791?s=460&v=4" alt="avatar">
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/496545016">
-        <img width="150" src="https://avatars1.githubusercontent.com/u/14065828?s=460&v=4" alt="avatar">
+        <img width="100" src="https://avatars1.githubusercontent.com/u/14065828?s=460&v=4" alt="avatar">
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/huangdenghe">
-        <img width="150" src="https://avatars2.githubusercontent.com/u/10628154?s=460&v=4" alt="avatar">
+        <img width="100" src="https://avatars2.githubusercontent.com/u/10628154?s=460&v=4" alt="avatar">
       </a>
     </td>
   </tr>
