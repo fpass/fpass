@@ -72,17 +72,17 @@
       }
     },
     mounted () {
-      this.initClipboard()
-      this.initKeyup()
-      this.initInputScroll()
+      this.clipboard()
+      this.keyup()
+      this.scrollIntoView()
     },
     methods: {
-      initClipboard () {
+      clipboard () {
         new Clipboard(this.$el.querySelector('.js-ok'), {
           text: () => this.encrypt
         })
       },
-      initKeyup () {
+      keyup () {
         window.addEventListener('keyup', event => {
           switch (event.keyCode) {
             case 13:
@@ -94,7 +94,7 @@
           }
         })
       },
-      initInputScroll () {
+      scrollIntoView () {
         Array.from(this.$el.querySelectorAll('input')).forEach(input => {
           input.addEventListener('focus', () => {
             setTimeout(() => input.scrollIntoView(false), 250)

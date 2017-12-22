@@ -1,5 +1,4 @@
 module.exports = {
-  srcDir: 'src/',
   loading: false,
   modules: [
     '~/modules/head',
