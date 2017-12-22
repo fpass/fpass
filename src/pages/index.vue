@@ -116,7 +116,7 @@
     align-items: center;
     justify-content: center;
     user-select: none;
-    min-height: 550px;
+    min-height: 504px;
   }
 
   .mu-popover {
