@@ -74,6 +74,7 @@
     mounted () {
       this.initClipboard()
       this.initKeyup()
+      this.initInputScroll()
     },
     methods: {
       initClipboard () {
@@ -91,6 +92,13 @@
               this.dialog = ''
               break
           }
+        })
+      },
+      initInputScroll () {
+        Array.from(this.$el.querySelectorAll('input')).forEach(input => {
+          input.addEventListener('focus', () => {
+            setTimeout(() => input.scrollIntoView(false), 250)
+          })
         })
       },
       clickOk () {
