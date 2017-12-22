@@ -86,10 +86,10 @@
           switch (event.keyCode) {
             case 13:
               this.clickOk()
-              break;
+              break
             case 27:
               this.dialog = ''
-              break;
+              break
           }
         })
       },
@@ -127,6 +127,10 @@
     max-width: 520px;
   }
 
+  .mu-dialog-title {
+    font-size: 18px;
+  }
+
   .mu-dialog-body {
     word-break: break-all;
     word-wrap: break-word;
@@ -159,6 +163,27 @@
 
     &:last-child {
       padding-bottom: 15px;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    body {
+      background: #fff;
+    }
+
+    .wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .form {
+      box-shadow: none;
     }
   }
 </style>
