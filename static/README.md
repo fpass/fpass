@@ -6,5 +6,5 @@
  |_|     |_|     /_/   \_\ |____/  |____/
 ```
 
-- [website](https://fpass.github.io)
-- [source code](https://github.com/fpass/fpass)
+- [fpass.github.io](https://fpass.github.io)
+- [fpass/fpass](https://github.com/fpass/fpass)
