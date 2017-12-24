@@ -8,7 +8,7 @@
 
 ## Website
 
-https://fpass.github.io
+https://fpass.ga
 
 ## Features
 
