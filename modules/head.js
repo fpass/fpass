@@ -10,10 +10,6 @@ module.exports = function (moduleOptions) {
       {name: 'apple-mobile-web-app-status-bar-style', content: 'black'},
       {name: 'format-detection', content: 'telephone=no,address=no,email=no'},
       {name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=0'}
-    ],
-    link: [
-      {rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic'},
-      {rel: 'stylesheet', href: '//fonts.googleapis.com/icon?family=Material+Icons'}
     ]
   }
 }
