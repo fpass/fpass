@@ -17,7 +17,7 @@ after_script:
   - git config user.email 'i@zhuweiyou.com'
   - git add .
   - git commit -m 'auto deploy'
-  - git push https://${GH_TOKEN}@github.com/fpass/fpass.github.io.git master -f
+  - git push https://${GH_TOKEN}@github.com/fpass/fpass.git master:gh-pages -f
 
 branches:
   only:
