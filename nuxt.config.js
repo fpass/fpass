@@ -1,7 +1,12 @@
+const execSync = require('child_process').execSync
+const version = JSON.parse(execSync('curl -s https://api.github.com/repos/fpass/fpass/tags').toString())[0].name
+
 module.exports = {
+  env: {
+    version
+  },
   loading: false,
   modules: [
-    '~/modules/head',
     '~/modules/pwa'
   ],
   plugins: [
