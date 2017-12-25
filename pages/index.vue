@@ -11,7 +11,7 @@
         </a>
       </div>
     </div>
-    <mu-card class="form">
+   <mu-card class="form">
       <div class="field">
         <mu-select-field v-model="ruleIndex" label="DOMAIN">
           <mu-menu-item v-for="(rule, index) in rules" :key="index" :value="index" :title="rule.domain + ' - ' + rule.name" />
@@ -168,6 +168,17 @@
   .form {
     padding: 15px 0;
     box-shadow: none;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .5s;
+    animation: form .5s forwards;
+
+    @keyframes form {
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
   }
 
   .field {
