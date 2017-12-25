@@ -10,13 +10,15 @@
  |_|     |_|     /_/   \_\ |____/  |____/
 ```
 
+only need remember one password can securely manage all website passwords
+
 ## Website
 
 https://fpass.ga
 
 ## Features
 
-- [x] only need a unique password
+- [x] only need remember one password
 - [x] prevent account credential enumeration attack
 - [x] prevent social engineering database attack
 
