@@ -84,15 +84,13 @@
         })
       },
       keyup () {
-        window.addEventListener('keyup', event => {
-          switch (event.keyCode) {
-            case 13:
-              this.jsOk.click()
-              break
-            case 27:
-              this.dialog = ''
-              break
-          }
+        const handlers = {
+          13: () => this.jsOk.click(),
+          27: () => this.dialog = ''
+        }
+        window.addEventListener('keyup', ({keyCode}) => {
+          const handler = handlers[keyCode]
+          handler && handler()
         })
       },
       scrollIntoView () {
