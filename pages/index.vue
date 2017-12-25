@@ -170,8 +170,8 @@
     box-shadow: none;
     opacity: 0;
     transform: scale(0);
-    transition: all .5s;
-    animation: form .5s forwards;
+    transition: all .3s;
+    animation: form .3s forwards;
 
     @keyframes form {
       100% {
