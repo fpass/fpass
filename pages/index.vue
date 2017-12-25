@@ -116,10 +116,6 @@
     height: 100%;
   }
 
-  body {
-    background: #f3f3f3;
-  }
-
   #__nuxt {
     display: flex;
     align-items: center;
@@ -149,7 +145,7 @@
     width: 100%;
     max-width: 750px;
     min-width: 320px;
-    padding: 0 15px;
+    padding: 40px 15px 0;
   }
 
   .github {
@@ -161,8 +157,17 @@
     }
   }
 
+  .mu-appbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+  }
+
   .form {
     padding: 15px 0;
+    box-shadow: none;
   }
 
   .field {
@@ -172,27 +177,6 @@
 
     &:last-child {
       padding-bottom: 15px;
-    }
-  }
-
-  @media screen and (max-width: 414px) {
-    body {
-      background: #fff;
-    }
-
-    .wrap {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 0;
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .form {
-      box-shadow: none;
     }
   }
 </style>
