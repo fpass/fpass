@@ -8,10 +8,10 @@ module.exports = {
   srcDir: 'src/',
   loading: false,
   modules: [
-    '~/modules/pwa'
+    '~/modules/offline'
   ],
   plugins: [
-    {src: '~/plugins/pwa', ssr: false},
+    {src: '~/plugins/offline', ssr: false},
     {src: '~/plugins/fastclick', ssr: false},
     {src: '~/plugins/muse-ui'}
   ],
