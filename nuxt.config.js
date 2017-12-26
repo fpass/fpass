@@ -3,7 +3,7 @@ const isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {
   env: {
-    VERSION: isProduction ? JSON.parse(execSync('curl -s https://api.github.com/repos/fpass/fpass/tags').toString())[0].name : 'dev'
+    VERSION: isProduction ? JSON.parse(execSync('curl -s https://api.github.com/repos/fpass/fpass/tags').toString())[0].name : ''
   },
   loading: false,
   modules: [
