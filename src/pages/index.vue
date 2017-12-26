@@ -1,13 +1,12 @@
 <template>
   <div class="wrap">
-    <div class="mu-appbar mu-paper-1">
+    <div class="mu-appbar">
       <div class="mu-appbar-title">
-        <span>FINAL PASS</span></div>
-      <div class="right">
-        <a href="https://github.com/fpass/fpass" target="_blank" class="github">
-          <github-icon />
-        </a>
+        <span>FINAL PASS</span>
       </div>
+      <a href="https://github.com/fpass/fpass" target="_blank" class="github">
+        <github-icon />
+      </a>
     </div>
     <mu-card class="form">
       <div class="field">
