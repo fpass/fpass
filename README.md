@@ -6,6 +6,8 @@
  |_|     |_|     /_/   \_\ |____/  |____/
 ```
 
+[![Build Status](https://travis-ci.org/fpass/fpass.svg?branch=master)](https://travis-ci.org/fpass/fpass)
+
 only need remember one password can securely manage all website passwords
 
 ## Website

@@ -8,7 +8,7 @@
   export default {
     head () {
       return {
-        title: `FINAL PASS ${process.env.VERSION}`,
+        title: 'FINAL PASS',
         meta: [
           {charset: 'utf-8'},
           {'http-equiv': 'x-ua-compatible', content: 'ie=edge'},
