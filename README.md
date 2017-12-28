@@ -7,6 +7,7 @@
 ```
 
 [![Build Status](https://travis-ci.org/fpass/fpass.svg?branch=master)](https://travis-ci.org/fpass/fpass)
+[![Greenkeeper badge](https://badges.greenkeeper.io/fpass/fpass.svg)](https://greenkeeper.io/)
 
 only need remember one password can securely manage all website passwords
 
