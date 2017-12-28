@@ -139,7 +139,9 @@
     word-break: break-all;
     word-wrap: break-word;
   }
+</style>
 
+<style lang="less" scoped>
   .wrap {
     width: 100%;
     max-width: 750px;
@@ -162,17 +164,6 @@
   .form {
     padding: 15px 0;
     box-shadow: none;
-    opacity: 0;
-    transform: scale(0);
-    transition: all .3s;
-    animation: form .3s forwards;
-
-    @keyframes form {
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
   }
 
   .field {
