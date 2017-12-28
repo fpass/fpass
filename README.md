@@ -12,6 +12,8 @@ only need remember one password can securely manage all website passwords
 
 ## Website
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/fpass/fpass.svg)](https://greenkeeper.io/)
+
 https://fpass.ga
 
 ## Features
