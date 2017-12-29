@@ -80,19 +80,14 @@
     },
     methods: {
       clipboard () {
-        new Clipboard(this.jsOk, {
-          text: () => this.encrypt
-        })
+        new Clipboard(this.jsOk, {text: () => this.encrypt})
       },
       keyup () {
         const handlers = {
           13: () => this.jsOk.click(),
           27: () => this.dialog = ''
         }
-        window.addEventListener('keyup', ({keyCode}) => {
-          const handler = handlers[keyCode]
-          handler && handler()
-        })
+        window.addEventListener('keyup', ({keyCode}) => handlers[keyCode] && handlers[keyCode]())
       },
       scrollIntoView () {
         Array.from(this.$el.querySelectorAll('input')).forEach(input => {
