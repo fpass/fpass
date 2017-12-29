@@ -1,6 +1,6 @@
 import runtime from 'offline-plugin/runtime'
 
 runtime.install({
-  onUpdateReady: () => runtime.applyUpdate(),
-  onUpdated: () => window.location.reload()
+  // onUpdated: () => window.location.reload(),
+  onUpdateReady: () => runtime.applyUpdate()
 })
