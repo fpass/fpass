@@ -13,9 +13,7 @@ module.exports = {
     extractCSS: true,
     publicPath: '/',
     vendor: [
-      'clipboard',
       'fastclick',
-      'js-sha512',
       'muse-ui'
     ]
   }
