@@ -10,21 +10,21 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Greenkeeper badge](https://badges.greenkeeper.io/fpass/fpass.svg)](https://greenkeeper.io/)
 
-[简体中文](README.zh-CN.md)
+[English](README.md)
 
-only need remember one password can securely manage all website passwords
+只需要记住一个密码，就可以安全管理所有的网站密码
 
-## Website
+## 网站
 
 https://fpass.ga
 
-## Features
+## 功能
 
-- [x] only need remember one password
-- [x] prevent account credential enumeration attack
-- [x] prevent social engineering database attack
+- [x] 只需要记住一个密码
+- [x] 防止暴力穷举密码
+- [x] 防止社工撞库
 
-## Contributors
+## 贡献者
 
 <table>
   <tr>
@@ -57,7 +57,7 @@ https://fpass.ga
   </tr>
 </table>
 
-## License
+## 许可证
 
 [GPL-3.0](https://github.com/fpass/fpass/blob/master/LICENSE)
 
