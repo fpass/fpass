@@ -9,6 +9,7 @@
 [![Build Status](https://travis-ci.org/fpass/fpass.svg?branch=master)](https://travis-ci.org/fpass/fpass)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Greenkeeper badge](https://badges.greenkeeper.io/fpass/fpass.svg)](https://greenkeeper.io/)
+
 [English](README.md)
 
 只需要记住一个密码，就可以安全管理所有的网站密码
