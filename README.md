@@ -49,7 +49,7 @@ https://fpass.ga
       <a href="https://github.com/zhuweiyou">zhuweiyou</a>
     </td>
     <td align="center">
-      <a href="https://github.com/496545016">duminghong</a>
+      <a href="https://github.com/duminghong">duminghong</a>
     </td>
     <td align="center">
       <a href="https://github.com/huangdenghe">小呆</a>
@@ -59,6 +59,6 @@ https://fpass.ga
 
 ## License
 
-[GPL-3.0](https://github.com/fpass/fpass/blob/master/LICENSE)
+[GPL-3.0](LICENSE)
 
-Copyright © 2017 fpass
+Copyright © 2017-2018 fpass
