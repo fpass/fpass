@@ -12,7 +12,7 @@
 
 [English](README.md)
 
-只需要记住一个密码，就可以安全管理所有网站的密码
+只需要记住一个密码，就可以安全管理所有的网站密码
 
 ## 网站
 
@@ -21,7 +21,7 @@ https://fpass.ga
 ## 功能
 
 - [x] 只需要记住一个密码
-- [x] 防止暴力穷举
+- [x] 防止暴力穷举密码
 - [x] 防止社工撞库
 
 ## 贡献者
@@ -49,7 +49,7 @@ https://fpass.ga
       <a href="https://github.com/zhuweiyou">zhuweiyou</a>
     </td>
     <td align="center">
-      <a href="https://github.com/duminghong">duminghong</a>
+      <a href="https://github.com/496545016">duminghong</a>
     </td>
     <td align="center">
       <a href="https://github.com/huangdenghe">小呆</a>
@@ -59,6 +59,6 @@ https://fpass.ga
 
 ## 许可证
 
-[GPL-3.0](LICENSE)
+[GPL-3.0](https://github.com/fpass/fpass/blob/master/LICENSE)
 
-Copyright © 2017-2018 fpass
+Copyright © 2017 fpass
