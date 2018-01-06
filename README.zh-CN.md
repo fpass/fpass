@@ -21,7 +21,7 @@ https://fpass.ga
 ## 功能
 
 - [x] 只需要记住一个密码
-- [x] 防止暴力穷举
+- [x] 防止暴力穷举密码
 - [x] 防止社工撞库
 
 ## 贡献者
@@ -34,7 +34,7 @@ https://fpass.ga
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/496545016">
+      <a href="https://github.com/duminghong">
         <img width="100" src="https://avatars1.githubusercontent.com/u/14065828?s=460&v=4" alt="avatar">
       </a>
     </td>
