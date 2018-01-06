@@ -15,7 +15,7 @@ after_success:
   - if [[ $TRAVIS_BRANCH == 'master' && $TRAVIS_PULL_REQUEST == 'false' ]]; then
     cd dist;
     git init;
-    git config user.name 'zhuweiyou';
+    git config user.name 'Travis CI';
     git config user.email 'i@zhuweiyou.com';
     git add .;
     git commit -m 'auto deploy';
