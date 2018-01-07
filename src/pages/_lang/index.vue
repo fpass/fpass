@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="wrap" v-show="$store.state.visible">
     <div class="mu-appbar">
       <div class="mu-appbar-title">
         <span>FINAL PASS</span>

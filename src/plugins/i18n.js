@@ -3,7 +3,7 @@ import VueI18n from 'vue-i18n'
 
 Vue.use(VueI18n)
 
-export default ({app, store}) => {
+export default ({app, store, isClient}) => {
   app.i18n = new VueI18n({
     locale: store.state.locale,
     fallbackLocale: 'en',
@@ -12,10 +12,16 @@ export default ({app, store}) => {
       'zh-CN': require('../locales/zh-CN.json')
     }
   })
-  app.i18n.path = (link) => {
-    if (app.i18n.locale === app.i18n.fallbackLocale) {
-      return `/${link}`
-    }
-    return `/${app.i18n.locale}/${link}`
+  if (isClient) {
+    app.router.beforeEach((to, from, next) => {
+      const locale = to.params.lang || to.query.lang || (typeof window !== 'undefined' ? navigator.language : '') || 'en'
+      store.commit('setLang', locale)
+      app.i18n.locale = store.state.locale
+      if (to.name === 'index') {
+        return next({path: `/${locale}/`})
+      }
+      next()
+      store.commit('setVisible', true)
+    })
   }
 }
