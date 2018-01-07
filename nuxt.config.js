@@ -2,15 +2,16 @@ module.exports = {
   srcDir: 'src/',
   loading: false,
   modules: [
-    '~/modules/eslint',
-    '~/modules/offline'
+    '~/modules/eslint'
   ],
   plugins: [
-    {src: '~/plugins/offline', ssr: false},
     {src: '~/plugins/fastclick', ssr: false},
     {src: '~/plugins/muse-ui'},
     {src: '~/plugins/i18n'}
   ],
+  manifest: {
+    name: 'FINAL PASS'
+  },
   router: {
     middleware: 'i18n'
   },

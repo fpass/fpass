@@ -28,7 +28,6 @@
     "eslint-plugin-standard": "^3.0.1",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
-    "offline-plugin": "^4.9.0",
     "pre-commit": "^1.2.2"
   }
 }
