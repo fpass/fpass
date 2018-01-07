@@ -6,11 +6,8 @@ Vue.use(VueI18n)
 export default ({app, store, isClient}) => {
   app.i18n = new VueI18n({
     locale: store.state.locale,
-    fallbackLocale: 'en',
-    messages: {
-      'en': require('../locales/en.json'),
-      'zh-CN': require('../locales/zh-CN.json')
-    }
+    fallbackLocale: store.state.locales[0],
+    messages: store.state.locales.reduce((obj, locale) => (obj[locale] = require(`../locales/${locale}.json`), obj), {})
   })
   if (isClient) {
     app.router.beforeEach((to, from, next) => {

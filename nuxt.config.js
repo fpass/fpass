@@ -1,9 +1,6 @@
 module.exports = {
   srcDir: 'src/',
   loading: false,
-  modules: [
-    '~/modules/eslint'
-  ],
   plugins: [
     {src: '~/plugins/fastclick', ssr: false},
     {src: '~/plugins/muse-ui'},
