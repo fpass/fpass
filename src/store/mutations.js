@@ -1,5 +1,5 @@
 export default {
-  SET_LANG (state, locale) {
+  setLang (state, locale) {
     if (state.locales.includes(locale)) {
       state.locale = locale
     }

@@ -12,13 +12,11 @@ export default ({app, store}) => {
       'zh-CN': require('../locales/zh-CN.json')
     }
   })
-
   i18n.path = link => {
     if (i18n.locale === i18n.fallbackLocale) {
       return `/${link}`
     }
     return `/${i18n.locale}/${link}`
   }
-
   app.i18n = i18n
 }
