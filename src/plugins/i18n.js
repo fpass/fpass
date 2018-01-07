@@ -3,14 +3,19 @@ import VueI18n from 'vue-i18n'
 
 Vue.use(VueI18n)
 
-export default ({app, isStatic, params, route, store}) => {
-  const locale = params.lang || route.query.lang || (isStatic ? navigator.language : '') || 'en'
+export default ({app, store}) => {
   app.i18n = new VueI18n({
-    locale,
+    locale: store.state.locale,
+    fallbackLocale: 'en',
     messages: {
       'en': require('../locales/en.json'),
       'zh-CN': require('../locales/zh-CN.json')
     }
   })
-  store.commit('setLang', locale)
+  app.i18n.path = (link) => {
+    if (app.i18n.locale === app.i18n.fallbackLocale) {
+      return `/${link}`
+    }
+    return `/${app.i18n.locale}/${link}`
+  }
 }

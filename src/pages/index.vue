@@ -1,3 +1,5 @@
-<template>
-  <div></div>
-</template>
+<script>
+  import Index from './_lang/index'
+
+  export default Index
+</script>
