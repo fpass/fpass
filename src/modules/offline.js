@@ -9,7 +9,9 @@ module.exports = function (moduleOptions) {
           events: true
         },
         externals: [
-          '/'
+          '/',
+          '/en',
+          '/zh-CN'
         ],
         excludes: [
           'LICENSES',
