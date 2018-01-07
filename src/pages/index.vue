@@ -1,5 +1,3 @@
-<script>
-  import Index from './_lang/index'
+<template>
 
-  export default Index
-</script>
+</template>
