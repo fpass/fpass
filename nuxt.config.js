@@ -9,9 +9,6 @@ module.exports = {
     {src: '~/plugins/muse-ui'},
     {src: '~/plugins/i18n'}
   ],
-  manifest: {
-    name: 'FINAL PASS'
-  },
   router: {
     middleware: 'i18n'
   },
