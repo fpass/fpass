@@ -9,7 +9,8 @@ module.exports = function (moduleOptions) {
           events: true
         },
         externals: [
-          '/'
+          '/',
+          '/zh-CN'
         ],
         excludes: [
           'LICENSES',

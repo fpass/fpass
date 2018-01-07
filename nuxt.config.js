@@ -8,12 +8,23 @@ module.exports = {
   plugins: [
     {src: '~/plugins/offline', ssr: false},
     {src: '~/plugins/fastclick', ssr: false},
-    {src: '~/plugins/muse-ui'}
+    {src: '~/plugins/muse-ui'},
+    {src: '~/plugins/i18n'}
   ],
+  router: {
+    middleware: 'i18n'
+  },
+  generate: {
+    routes: [
+      '/',
+      '/zh-CN'
+    ]
+  },
   build: {
     extractCSS: true,
     publicPath: '/',
     vendor: [
+      'vue-i18n',
       'fastclick',
       'muse-ui'
     ]
