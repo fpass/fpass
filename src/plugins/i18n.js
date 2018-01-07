@@ -3,7 +3,7 @@ import VueI18n from 'vue-i18n'
 
 Vue.use(VueI18n)
 
-export default ({app, route, params, store, redirect}) => {
+export default ({app, route, params, store}) => {
   app.i18n = new VueI18n({
     locale: store.state.locale,
     fallbackLocale: 'en',
@@ -17,10 +17,11 @@ export default ({app, route, params, store, redirect}) => {
       ? `/${link}`
       : `/${app.i18n.locale}/${link}`
 
-  const locale = params.lang || (process.browser ? navigator.language : '') || 'en'
-  if (route.path === '/') {
-    return redirect(`/${locale}`)
-  }
+  const locale = params.lang || (typeof window !== 'undefined' ? navigator.language : '') || 'en'
   store.commit('setLang', locale)
   app.i18n.locale = store.state.locale
+
+  if (route.path === '/') {
+    app.router.push(locale)
+  }
 }
