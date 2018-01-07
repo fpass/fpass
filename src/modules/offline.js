@@ -10,6 +10,7 @@ module.exports = function (moduleOptions) {
         },
         externals: [
           '/',
+          '/en',
           '/zh-CN'
         ],
         excludes: [
