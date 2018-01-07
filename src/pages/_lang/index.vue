@@ -10,25 +10,25 @@
     </div>
     <mu-card class="form">
       <div class="field">
-        <mu-select-field v-model="ruleIndex" label="DOMAIN">
+        <mu-select-field v-model="ruleIndex" :label="$t('domain')">
           <mu-menu-item v-for="(rule, index) in rules" :key="index" :value="index" :title="rule.domain + ' - ' + rule.name" />
         </mu-select-field>
       </div>
       <div class="field" v-show="ruleIndex === rules.length - 1">
-        <mu-text-field v-model="domain" label="DOMAIN" type="text" />
+        <mu-text-field v-model="domain" :label="$t('domain')" type="text" />
       </div>
       <div class="field" v-show="ruleIndex === rules.length - 1">
-        <mu-text-field v-model="length" label="LENGTH" type="number" />
+        <mu-text-field v-model="length" :label="$t('length')" type="number" />
       </div>
       <div class="field">
-        <mu-text-field v-model="password" label="PASSWORD" type="password" />
+        <mu-text-field v-model="password" :label="$t('password')" type="password" />
       </div>
       <div class="field">
-        <mu-raised-button class="js-ok" label="OK" :disabled="!encrypt" primary @click="clickOk" />
+        <mu-raised-button class="js-ok" :label="$t('confirm')" :disabled="!encrypt" primary @click="clickOk" />
       </div>
     </mu-card>
     <mu-dialog :open="!!dialog" :title="dialog">
-      <mu-flat-button label="OK" slot="actions" primary @click="dialog = ''" />
+      <mu-flat-button :label="$t('confirm')" slot="actions" primary @click="dialog = ''" />
     </mu-dialog>
   </div>
 </template>
@@ -97,7 +97,7 @@
         })
       },
       clickOk () {
-        this.dialog = 'The password has been copied to the clipboard'
+        this.dialog = this.$t('copied')
       }
     }
   }
