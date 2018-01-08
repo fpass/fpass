@@ -10,15 +10,18 @@ cache:
 script:
   - npm run build
 
-after_script:
-  - cd dist
-  - git init
-  - git config user.name 'zhuweiyou'
-  - git config user.email 'i@zhuweiyou.com'
-  - git add .
-  - git commit -m 'auto deploy'
-  - git push https://${GH_TOKEN}@github.com/fpass/fpass.github.io.git master -f
+after_success:
+  - if [[ $TRAVIS_BRANCH == 'master' && $TRAVIS_PULL_REQUEST == 'false' ]]; then
+    cd dist;
+    git init;
+    git config user.name 'Travis CI';
+    git config user.email 'i@zhuweiyou.com';
+    git add .;
+    git commit -m 'auto deploy';
+    git push https://${GH_TOKEN}@github.com/fpass/fpass.git master:gh-pages -f;
+    fi
 
 branches:
   only:
-    - /^v[0-9]/
+    - master
+    - /^greenkeeper/.*$/

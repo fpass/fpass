@@ -7,13 +7,13 @@
   "dependencies": {
     "clipboard": "^1.7.1",
     "fastclick": "^1.0.6",
-    "js-sha512": "^0.7.0",
+    "js-sha512": "^0.7.1",
     "muse-ui": "^2.1.0",
-    "nuxt": "^1.0.0-rc11"
+    "nuxt": "^1.0.0-rc11",
+    "vue-i18n": "^7.3.4"
   },
   "devDependencies": {
     "less": "^2.7.3",
-    "less-loader": "^4.0.5",
-    "offline-plugin": "^4.8.5"
+    "less-loader": "^4.0.5"
   }
 }

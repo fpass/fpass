@@ -19,9 +19,15 @@ const rules = [
   {name: '码云', domain: 'gitee.com', length: 16},
   {name: '斗鱼', domain: 'douyu.com', length: 25},
   {name: '哔哩哔哩', domain: 'bilibili.com', length: 16},
+  {name: '甲骨文', domain: 'oracle.com', length: 80},
+  {name: '饿了么', domain: 'ele.me', length: 20},
+  {name: 'Cloudflare', domain: 'cloudflare.com', length: 128},
+  {name: 'Freenom', domain: 'freenom.com', length: 128},
+  {name: 'Vultr', domain: 'vultr.com', length: 128},
+  {name: '小米', domain: 'mi.com', length: 16}
 ]
 
 rules.sort((a, b) => a.domain <= b.domain ? -1 : 1)
-rules.push({name: '没有我想要的', domain: 'not what i want'})
+rules.push({name: '其它', domain: 'other'})
 
 export default rules

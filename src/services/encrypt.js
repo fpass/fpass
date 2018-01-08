@@ -4,7 +4,7 @@ export default ({domain, salt, length}) => {
   if (!domain || !salt || length <= 2) {
     return ''
   }
-  let ret = Array.apply(null, {length: 3})
+  const ret = Array.apply(null, {length: 3})
     .reduce(value => sha512(value + salt), domain)
     .substr(0, length)
     .split('')
