@@ -9,21 +9,21 @@
 [![Build Status](https://travis-ci.org/fpass/fpass.svg?branch=master)](https://travis-ci.org/fpass/fpass)
 [![Greenkeeper badge](https://badges.greenkeeper.io/fpass/fpass.svg)](https://greenkeeper.io/)
 
-[简体中文](README.zh-CN.md)
+[English](README.en.md)
 
-only need remember one password can securely manage all website passwords
+只需要记住一个密码，就可以安全管理所有网站的密码
 
-## Website
+## 网站
 
 https://fpass.ga
 
-## Features
+## 功能
 
-- [x] only need remember one password
-- [x] prevent account credential enumeration attack
-- [x] prevent social engineering database attack
+- [x] 只需要记住一个密码
+- [x] 防止暴力穷举
+- [x] 防止社工撞库
 
-## Contributors
+## 贡献者
 
 <table>
   <tr>
@@ -56,7 +56,9 @@ https://fpass.ga
   </tr>
 </table>
 
-## License
+[贡献指南](.github/CONTRIBUTING.md)
+
+## 许可证
 
 [GPL-3.0](LICENSE)
 
