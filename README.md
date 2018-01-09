@@ -48,7 +48,7 @@ https://fpass.ga
       <a href="https://github.com/zhuweiyou">zhuweiyou</a>
     </td>
     <td align="center">
-      <a href="https://github.com/duminghong">duminghong</a>
+      <a href="https://github.com/duminghong">不二很纯洁</a>
     </td>
     <td align="center">
       <a href="https://github.com/huangdenghe">小呆</a>
