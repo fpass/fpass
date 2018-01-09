@@ -15,7 +15,7 @@ export default ({app, store, isClient}) => {
       store.commit('setLang', locale)
       app.i18n.locale = store.state.locale
       if (to.name === 'index') {
-        return next({path: `/${locale}/`})
+        return app.router.replace({path: `/${locale}/`})
       }
       next()
       store.commit('setVisible', true)
