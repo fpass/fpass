@@ -1,4 +1,8 @@
 const rules = [
+  {name: '腾讯企业邮', domain: 'exmail.qq.com', length: 32},
+  {name: 'segmentfault', domain: 'segmentfault.com', length: 32},
+  {name: '简书', domain: 'jianshu.com', length: 32},
+  {name: '微信公众平台', domain: 'mp.weixin.qq.com', length: 16},
   {name: '优酷', domain: 'youku.com', length: 16},
   {name: 'Steam', domain: 'store.steampowered.com', length: 64},
   {name: '腾讯QQ', domain: 'qq.com', length: 16},
