@@ -56,7 +56,7 @@ https://fpass.ga
   </tr>
 </table>
 
-[CONTRIBUTING](.github/CONTRIBUTING.en.md)
+[Contributing](.github/CONTRIBUTING.en.md)
 
 ## License
 
