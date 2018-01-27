@@ -1,15 +1,11 @@
 import Vue from 'vue'
-import FastClick from 'fastclick'
-import './i18n'
+import i18n from './i18n'
 import router from './router'
-import store from './store'
 import App from './component/app'
 
-FastClick.attach(document.body)
-
 new Vue({
+  i18n,
   router,
-  store,
   el: '#app',
   render: h => h(App)
 })
