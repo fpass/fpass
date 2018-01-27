@@ -28,9 +28,12 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  if (locales.indexOf(to.name) !== -1) {
-    i18n.locale = to.name
+  if (to.name === 'index') {
+    return next(navigator.language)
   }
+  i18n.locale = locales.indexOf(to.name) === -1
+    ? (locales.indexOf(navigator.language) === -1 ? locales[0] : navigator.language)
+    : to.name
   next()
 })
 
