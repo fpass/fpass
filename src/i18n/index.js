@@ -6,6 +6,6 @@ Vue.use(VueI18n)
 export const locales = ['en', 'zh-CN']
 
 export const i18n = new VueI18n({
-  locale: locales.indexOf(navigator.language) === -1 ? 'en' : navigator.language,
+  locale: locales[0],
   messages: locales.reduce((obj, locale) => (obj[locale] = require(`./${locale}.json`), obj), {})
 })
