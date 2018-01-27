@@ -14,7 +14,7 @@ export default ({app, store}) => {
       const locale = to.params.lang || to.query.lang || (typeof window !== 'undefined' ? navigator.language : '') || 'en'
       store.commit('setLang', locale)
       app.i18n.locale = store.state.locale
-      if (to.name === 'index') {
+      if (to.name === 'index2') {
         return app.router.replace({path: `/${locale}/`})
       }
       next()

@@ -11,7 +11,7 @@
     <mu-card class="form">
       <div class="field">
         <mu-select-field v-model="ruleIndex" :label="$t('domain')">
-          <mu-menu-item v-for="(rule, index) in rules" :key="index" :value="index" :title="rule.domain + ' - ' + rule.name" />
+          <mu-menu-item v-for="(rule, index) in rules" :key="index2" :value="index2" :title="rule.domain + ' - ' + rule.name" />
         </mu-select-field>
       </div>
       <div class="field" v-show="ruleIndex === rules.length - 1">
@@ -36,8 +36,8 @@
 <script>
   import Clipboard from 'clipboard'
   import GithubIcon from '../../components/github-icon'
-  import rules from '../../util/rules'
-  import encrypt from '../../util/encrypt'
+  import rules from '../../services/rules'
+  import encrypt from '../../services/encrypt'
 
   export default {
     asyncData () {

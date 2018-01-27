@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import favicon from '../assets/favicon.png'
+  import favicon from '../static/favicon.png'
 
   export default {
     head () {
