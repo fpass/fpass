@@ -32,7 +32,7 @@ router.beforeEach((to, from, next) => {
     return next(navigator.language)
   }
   i18n.locale = locales.indexOf(to.name) === -1
-    ? (locales.indexOf(navigator.language) === -1 ? 'en' : navigator.language)
+    ? (locales.indexOf(navigator.language) === -1 ? locales[0] : navigator.language)
     : to.name
   next()
 })
