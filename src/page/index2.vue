@@ -35,12 +35,12 @@
 
 <script>
   import Clipboard from 'clipboard'
-  import GithubIcon from '../../components/github-icon'
-  import rules from '../../services/rules'
-  import encrypt from '../../services/encrypt'
+  import GithubIcon from '../component/github-icon'
+  import rules from '../service/rules'
+  import encrypt from '../service/encrypt'
 
   export default {
-    asyncData () {
+    data () {
       return {
         rules,
         ruleIndex: '',
