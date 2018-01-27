@@ -124,11 +124,13 @@
 
 <style lang="less" scoped>
   .wrap {
-    width: 100%;
-    max-width: 750px;
+    height: 100%;
     min-width: 320px;
     padding: 40px 15px 0;
     min-height: 504px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .github {
@@ -144,6 +146,7 @@
   }
 
   .form {
+    max-width: 750px;
     padding: 15px 0;
     box-shadow: none;
   }
