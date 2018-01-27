@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap" v-show="$store.state.visible">
+  <div class="wrap">
     <div class="mu-appbar">
       <div class="mu-appbar-title">
         <span>FINAL PASS</span>
@@ -35,12 +35,12 @@
 
 <script>
   import Clipboard from 'clipboard'
-  import GithubIcon from '../../components/github-icon'
-  import rules from '../../services/rules'
-  import encrypt from '../../services/encrypt'
+  import GithubIcon from '../component/github-icon'
+  import rules from '../service/rules'
+  import encrypt from '../service/encrypt'
 
   export default {
-    asyncData () {
+    data () {
       return {
         rules,
         ruleIndex: '',
@@ -103,45 +103,15 @@
   }
 </script>
 
-<style lang="less">
-  html,
-  body,
-  #__nuxt {
+<style lang="less" scoped>
+  .wrap {
     height: 100%;
-  }
-
-  #__nuxt {
+    min-width: 320px;
+    padding: 40px 15px 0;
+    min-height: 504px;
     display: flex;
     align-items: center;
     justify-content: center;
-    user-select: none;
-    min-height: 504px;
-  }
-
-  .mu-popover {
-    overflow: auto;
-  }
-
-  .mu-dialog {
-    max-width: 520px;
-  }
-
-  .mu-dialog-title {
-    font-size: 18px;
-  }
-
-  .mu-dialog-body {
-    word-break: break-all;
-    word-wrap: break-word;
-  }
-</style>
-
-<style lang="less" scoped>
-  .wrap {
-    width: 100%;
-    max-width: 750px;
-    min-width: 320px;
-    padding: 40px 15px 0;
   }
 
   .github {
@@ -157,6 +127,7 @@
   }
 
   .form {
+    max-width: 750px;
     padding: 15px 0;
     box-shadow: none;
   }
