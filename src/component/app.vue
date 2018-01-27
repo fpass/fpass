@@ -21,4 +21,21 @@
   #app {
     height: 100%;
   }
+
+  .mu-popover {
+    overflow: auto;
+  }
+
+  .mu-dialog {
+    max-width: 520px;
+  }
+
+  .mu-dialog-title {
+    font-size: 18px;
+  }
+
+  .mu-dialog-body {
+    word-break: break-all;
+    word-wrap: break-word;
+  }
 </style>
