@@ -12,10 +12,11 @@ script:
 
 after_success:
   - if [[ $TRAVIS_BRANCH == 'master' && $TRAVIS_PULL_REQUEST == 'false' ]]; then
-    cd dist;
-    git init;
     git config user.name 'Travis CI';
     git config user.email 'i@zhuweiyou.com';
+    git push https://${GITEE_TOKEN}@gitee.com/fpass/fpass.git master -f;
+    cd dist;
+    git init;
     git add .;
     git commit -m 'auto deploy';
     git push https://${GH_TOKEN}@github.com/fpass/fpass.git master:gh-pages -f;
