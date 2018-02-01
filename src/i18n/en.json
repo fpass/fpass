@@ -3,7 +3,5 @@
   "password": "PASSWORD",
   "length": "LENGTH",
   "confirm": "OK",
-  "copied": "The password has been copied to the clipboard",
-  "notfound": "404 NOT FOUND",
-  "backhome": "BACK HOME"
+  "copied": "The password has been copied to the clipboard"
 }

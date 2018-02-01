@@ -3,7 +3,5 @@
   "password": "密码",
   "length": "长度",
   "confirm": "确定",
-  "copied": "密码已复制到剪贴板",
-  "notfound": "页面没有找到",
-  "backhome": "返回首页"
+  "copied": "密码已复制到剪贴板"
 }
