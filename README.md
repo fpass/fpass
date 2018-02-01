@@ -23,7 +23,7 @@ https://fpass.ga
 - [x] 防止暴力穷举
 - [x] 防止社工撞库
 
-## 贡献者
+## Contributors
 
 <table>
   <tr>
