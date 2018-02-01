@@ -11,11 +11,7 @@
 [![Build Status](https://travis-ci.org/fpass/fpass.svg?branch=master)](https://travis-ci.org/fpass/fpass)
 [![Greenkeeper badge](https://badges.greenkeeper.io/fpass/fpass.svg)](https://greenkeeper.io)
 
-[English](README.en.md)
-
 只需要记住一个密码，就可以安全管理所有网站的密码
-
-## 网站
 
 https://fpass.ga
 
@@ -25,7 +21,7 @@ https://fpass.ga
 - [x] 防止暴力穷举
 - [x] 防止社工撞库
 
-## 贡献者
+## 开发者
 
 <table>
   <tr>
@@ -50,15 +46,13 @@ https://fpass.ga
       <a href="https://github.com/zhuweiyou">zhuweiyou</a>
     </td>
     <td align="center">
-      <a href="https://github.com/duminghong">不二很纯洁</a>
+      <a href="https://github.com/duminghong">duminghong</a>
     </td>
     <td align="center">
-      <a href="https://github.com/huangdenghe">小呆</a>
+      <a href="https://github.com/huangdenghe">huangdenghe</a>
     </td>
   </tr>
 </table>
-
-[贡献指南](.github/CONTRIBUTING.md)
 
 ## 许可证
 
