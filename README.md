@@ -13,17 +13,15 @@
 
 只需要记住一个密码，就可以安全管理所有网站的密码
 
-## Website
-
 https://fpass.ga
 
-## Features
+## 功能
 
 - [x] 只需要记住一个密码
 - [x] 防止暴力穷举
 - [x] 防止社工撞库
 
-## Contributors
+## 开发者
 
 <table>
   <tr>
@@ -56,7 +54,7 @@ https://fpass.ga
   </tr>
 </table>
 
-## License
+## 许可证
 
 [GPL-3.0](LICENSE)
 
