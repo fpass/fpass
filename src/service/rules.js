@@ -28,7 +28,8 @@ const rules = [
   {name: 'Cloudflare', domain: 'cloudflare.com', length: 128},
   {name: 'Freenom', domain: 'freenom.com', length: 128},
   {name: 'Vultr', domain: 'vultr.com', length: 128},
-  {name: '小米', domain: 'mi.com', length: 16}
+  {name: '小米', domain: 'mi.com', length: 16},
+  {name: '华为账号', domain: 'vmall.com', length: 32}
 ]
 
 rules.sort((a, b) => a.domain <= b.domain ? -1 : 1)
