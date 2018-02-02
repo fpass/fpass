@@ -26,7 +26,7 @@ const rules = [
   {name: '甲骨文', domain: 'oracle.com', length: 80},
   {name: '饿了么', domain: 'ele.me', length: 20},
   {name: 'Cloudflare', domain: 'cloudflare.com', length: 128},
-  {name: 'Freenom', domain: 'freenom.com', length: 128},
+  {name: 'Freenom', domain: 'freenom.com', length: 64},
   {name: 'Vultr', domain: 'vultr.com', length: 128},
   {name: '小米', domain: 'mi.com', length: 16},
   {name: '华为账号', domain: 'vmall.com', length: 32}
