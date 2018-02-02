@@ -76,7 +76,9 @@ https://fpass.ga
   </tr>
 </table>
 
-如果您需要设置密码的网站不在列表之中，欢迎提 issue 或 pull request
+如果您需要设置密码的网站不在列表之中，欢迎提 issue 或 pull request 添加
+
+临时使用可以选择列表最后一项 `其它 - other` 来生成自定义长度的密码
 
 ## 许可
 
