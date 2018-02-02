@@ -97,7 +97,7 @@
         })
       },
       clickOk () {
-        this.dialog = this.$t('copied')
+        this.dialog = Clipboard.isSupported() ? this.$t('copied') : this.encrypt
       }
     }
   }
