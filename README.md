@@ -43,7 +43,7 @@ https://fpass.ga
 
 > 包含大小写字母和数字的密码，可以满足绝大多数网站对密码强度的要求
 
-## 开发者
+## 贡献
 
 <table>
   <tr>
@@ -78,7 +78,7 @@ https://fpass.ga
 
 如果您需要设置密码的网站不在列表之中，欢迎提 issue 或 pull request
 
-## 许可证
+## 许可
 
 [GPL-3.0](LICENSE)
 
