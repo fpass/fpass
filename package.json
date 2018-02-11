@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "babel-preset-poi": "^1.1.2",
-    "less": "^2.7.3",
+    "less": "^3.0.0",
     "less-loader": "^4.0.5",
     "poi": "^9.6.13"
   }
