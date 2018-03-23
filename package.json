@@ -1,20 +1,29 @@
 {
   "name": "fpass",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "poi",
-    "build": "poi build"
+    "dev": "vue-cli-service serve --open",
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "clipboard": "^1.7.1",
     "js-sha512": "^0.7.1",
     "muse-ui": "^2.1.0",
+    "vue": "^2.5.16",
     "vue-i18n": "^7.4.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "babel-preset-poi": "^10.0.0-alpha.1",
-    "less": "^3.0.0",
+    "@vue/cli-plugin-babel": "^3.0.0-beta.6",
+    "@vue/cli-service": "^3.0.0-beta.6",
+    "less": "^2.7.3",
     "less-loader": "^4.0.5",
-    "poi": "^9.6.13"
-  }
+    "vue-template-compiler": "^2.5.13"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

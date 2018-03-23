@@ -3,12 +3,17 @@ language: node_js
 node_js:
   - '9'
 
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.5.1
+  - export PATH=$HOME/.yarn/bin:$PATH
+
 cache:
+  yarn: true
   directories:
     - node_modules
 
 script:
-  - npm run build
+  - yarn build
 
 after_success:
   - if [[ $TRAVIS_BRANCH == 'master' && $TRAVIS_PULL_REQUEST == 'false' ]]; then
@@ -18,7 +23,7 @@ after_success:
     cd dist;
     git init;
     git add .;
-    git commit -m 'auto deploy';
+    git commit -m 'build';
     git push https://${GH_TOKEN}@github.com/fpass/fpass.git master:gh-pages -f;
     fi
 

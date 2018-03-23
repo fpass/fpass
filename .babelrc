@@ -1,5 +1,3 @@
 {
-  "presets": [
-    "poi"
-  ]
+  "presets": ["@vue/app"]
 }

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import { i18n, locales } from '../i18n'
-import PageIndex from '../page/index'
+import { i18n, locales } from './i18n'
+import PageIndex from './page/index'
 
 Vue.use(VueRouter)
 
