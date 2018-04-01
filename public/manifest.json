@@ -1,0 +1,9 @@
+{
+  "name": "FINALL PASS",
+  "short_name": "fpass",
+  "icons": [],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#505050",
+  "theme_color": "#FFFFFF"
+}

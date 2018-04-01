@@ -2,6 +2,7 @@ import Vue from 'vue'
 import { i18n } from './i18n'
 import router from './router'
 import App from './app.vue'
+import './registerServiceWorker'
 
 new Vue({
   i18n,

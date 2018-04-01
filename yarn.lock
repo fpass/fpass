@@ -653,6 +653,12 @@
     "@vue/babel-preset-app" "^3.0.0-beta.6"
     babel-loader "^8.0.0-0"
 
+"@vue/cli-plugin-pwa@^3.0.0-beta.6":
+  version "3.0.0-beta.6"
+  resolved "http://registry.npm.taobao.org/@vue/cli-plugin-pwa/download/@vue/cli-plugin-pwa-3.0.0-beta.6.tgz#869abc3a45beb43e8be419ab77043313af75156d"
+  dependencies:
+    workbox-webpack-plugin "^3.0.0-beta.1"
+
 "@vue/cli-service@^3.0.0-beta.6":
   version "3.0.0-beta.6"
   resolved "http://registry.npm.taobao.org/@vue/cli-service/download/@vue/cli-service-3.0.0-beta.6.tgz#b229b5fd3c5db33f0df9824f0b99ca081fa38d20"
@@ -1038,6 +1044,13 @@ babel-plugin-transform-vue-jsx@^4.0.1:
   resolved "http://registry.npm.taobao.org/babel-plugin-transform-vue-jsx/download/babel-plugin-transform-vue-jsx-4.0.1.tgz#2c8bddce87a6ef09eaa59869ff1bfbeeafc5f88d"
   dependencies:
     esutils "^2.0.2"
+
+babel-runtime@^6.26.0:
+  version "6.26.0"
+  resolved "http://registry.npm.taobao.org/babel-runtime/download/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.11.0"
 
 babylon@7.0.0-beta.42:
   version "7.0.0-beta.42"
@@ -1576,6 +1589,12 @@ commander@~2.13.0:
   version "2.13.0"
   resolved "http://registry.npm.taobao.org/commander/download/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
 
+common-tags@^1.4.0:
+  version "1.7.2"
+  resolved "http://registry.npm.taobao.org/common-tags/download/common-tags-1.7.2.tgz#24d9768c63d253a56ecff93845b44b4df1d52771"
+  dependencies:
+    babel-runtime "^6.26.0"
+
 commondir@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/commondir/download/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
@@ -1686,6 +1705,10 @@ copy-webpack-plugin@^4.5.0:
     minimatch "^3.0.4"
     p-limit "^1.0.0"
     serialize-javascript "^1.4.0"
+
+core-js@^2.4.0:
+  version "2.5.4"
+  resolved "http://registry.npm.taobao.org/core-js/download/core-js-2.5.4.tgz#f2c8bf181f2a80b92f360121429ce63a2f0aeae0"
 
 core-js@^2.5.3:
   version "2.5.3"
@@ -2613,6 +2636,14 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
+fs-extra@^4.0.2:
+  version "4.0.3"
+  resolved "http://registry.npm.taobao.org/fs-extra/download/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
 fs-write-stream-atomic@^1.0.8:
   version "1.0.10"
   resolved "http://registry.npm.taobao.org/fs-write-stream-atomic/download/fs-write-stream-atomic-1.0.10.tgz#b47df53493ef911df75731e70a9ded0189db40c9"
@@ -2773,7 +2804,7 @@ good-listener@^1.2.2:
   dependencies:
     delegate "^3.1.2"
 
-graceful-fs@^4.1.11, graceful-fs@^4.1.2:
+graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
   resolved "http://registry.npm.taobao.org/graceful-fs/download/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
@@ -3374,6 +3405,14 @@ javascript-stringify@^1.6.0:
   version "1.6.0"
   resolved "http://registry.npm.taobao.org/javascript-stringify/download/javascript-stringify-1.6.0.tgz#142d111f3a6e3dae8f4a9afd77d45855b5a9cce3"
 
+joi@^11.1.1:
+  version "11.4.0"
+  resolved "http://registry.npm.taobao.org/joi/download/joi-11.4.0.tgz#f674897537b625e9ac3d0b7e1604c828ad913ccb"
+  dependencies:
+    hoek "4.x.x"
+    isemail "3.x.x"
+    topo "2.x.x"
+
 joi@^12.0.0:
   version "12.0.0"
   resolved "http://registry.npm.taobao.org/joi/download/joi-12.0.0.tgz#46f55e68f4d9628f01bbb695902c8b307ad8d33a"
@@ -3453,6 +3492,12 @@ json3@^3.3.2:
 json5@^0.5.0, json5@^0.5.1:
   version "0.5.1"
   resolved "http://registry.npm.taobao.org/json5/download/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
+
+jsonfile@^4.0.0:
+  version "4.0.0"
+  resolved "http://registry.npm.taobao.org/jsonfile/download/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
+  optionalDependencies:
+    graceful-fs "^4.1.6"
 
 jsonify@~0.0.0:
   version "0.0.0"
@@ -3602,6 +3647,10 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
+lodash._reinterpolate@~3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/lodash._reinterpolate/download/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
+
 lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "http://registry.npm.taobao.org/lodash.camelcase/download/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
@@ -3613,6 +3662,19 @@ lodash.defaultsdeep@^4.6.0:
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "http://registry.npm.taobao.org/lodash.memoize/download/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
+
+lodash.template@^4.4.0:
+  version "4.4.0"
+  resolved "http://registry.npm.taobao.org/lodash.template/download/lodash.template-4.4.0.tgz#e73a0385c8355591746e020b99679c690e68fba0"
+  dependencies:
+    lodash._reinterpolate "~3.0.0"
+    lodash.templatesettings "^4.0.0"
+
+lodash.templatesettings@^4.0.0:
+  version "4.1.0"
+  resolved "http://registry.npm.taobao.org/lodash.templatesettings/download/lodash.templatesettings-4.1.0.tgz#2b4d4e95ba440d915ff08bc899e4553666713316"
+  dependencies:
+    lodash._reinterpolate "~3.0.0"
 
 lodash.tolower@^4.1.2:
   version "4.1.2"
@@ -4680,6 +4742,10 @@ prettier@^1.7.0:
   version "1.11.1"
   resolved "http://registry.npm.taobao.org/prettier/download/prettier-1.11.1.tgz#61e43fc4cd44e68f2b0dfc2c38cd4bb0fccdcc75"
 
+pretty-bytes@^4.0.2:
+  version "4.0.2"
+  resolved "http://registry.npm.taobao.org/pretty-bytes/download/pretty-bytes-4.0.2.tgz#b2bf82e7350d65c6c33aa95aaa5a4f6327f61cd9"
+
 pretty-error@^2.0.2:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/pretty-error/download/pretty-error-2.1.1.tgz#5f4f87c8f91e5ae3f3ba87ab4cf5e03b1a17f1a3"
@@ -4937,7 +5003,7 @@ regenerate@^1.2.1, regenerate@^1.3.3:
   version "1.3.3"
   resolved "http://registry.npm.taobao.org/regenerate/download/regenerate-1.3.3.tgz#0c336d3980553d755c39b586ae3b20aa49c82b7f"
 
-regenerator-runtime@^0.11.1:
+regenerator-runtime@^0.11.0, regenerator-runtime@^0.11.1:
   version "0.11.1"
   resolved "http://registry.npm.taobao.org/regenerator-runtime/download/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
 
@@ -4978,6 +5044,10 @@ regexpu-core@^4.1.3:
     regjsparser "^0.2.1"
     unicode-match-property-ecmascript "^1.0.3"
     unicode-match-property-value-ecmascript "^1.0.1"
+
+register-service-worker@^1.0.0:
+  version "1.1.1"
+  resolved "http://registry.npm.taobao.org/register-service-worker/download/register-service-worker-1.1.1.tgz#b6f63ec6b92497256ebd205e0f148d95eb187a79"
 
 regjsgen@^0.2.0:
   version "0.2.0"
@@ -5873,6 +5943,10 @@ unique-slug@^2.0.0:
   dependencies:
     imurmurhash "^0.1.4"
 
+universalify@^0.1.0:
+  version "0.1.1"
+  resolved "http://registry.npm.taobao.org/universalify/download/universalify-0.1.1.tgz#fa71badd4437af4c148841e3b3b165f9e9e590b7"
+
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/unpipe/download/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
@@ -6195,6 +6269,94 @@ window-size@0.1.0:
 wordwrap@0.0.2:
   version "0.0.2"
   resolved "http://registry.npm.taobao.org/wordwrap/download/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
+
+workbox-background-sync@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-background-sync/download/workbox-background-sync-3.0.1.tgz#4b265bb15b0f516f41d4442066090605fe1e134c"
+  dependencies:
+    workbox-core "^3.0.1"
+
+workbox-broadcast-cache-update@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-broadcast-cache-update/download/workbox-broadcast-cache-update-3.0.1.tgz#a1548fc93a7f010d9b4ee7955120779a7f8a4532"
+  dependencies:
+    workbox-core "^3.0.1"
+
+workbox-build@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-build/download/workbox-build-3.0.1.tgz#818679f4f95a36ac9d6c860f04f74936db56061b"
+  dependencies:
+    babel-runtime "^6.26.0"
+    common-tags "^1.4.0"
+    fs-extra "^4.0.2"
+    glob "^7.1.2"
+    joi "^11.1.1"
+    lodash.template "^4.4.0"
+    pretty-bytes "^4.0.2"
+    workbox-background-sync "^3.0.1"
+    workbox-broadcast-cache-update "^3.0.1"
+    workbox-cache-expiration "^3.0.1"
+    workbox-cacheable-response "^3.0.1"
+    workbox-core "^3.0.1"
+    workbox-google-analytics "^3.0.1"
+    workbox-precaching "^3.0.1"
+    workbox-routing "^3.0.1"
+    workbox-strategies "^3.0.1"
+    workbox-sw "^3.0.1"
+
+workbox-cache-expiration@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-cache-expiration/download/workbox-cache-expiration-3.0.1.tgz#0643cabb1aeabe5d63aa6e8f0ac16b579835b608"
+  dependencies:
+    workbox-core "^3.0.1"
+
+workbox-cacheable-response@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-cacheable-response/download/workbox-cacheable-response-3.0.1.tgz#a1e3f8ad8a041b1379b1d25c5e2a14d79f322277"
+  dependencies:
+    workbox-core "^3.0.1"
+
+workbox-core@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-core/download/workbox-core-3.0.1.tgz#83c7c39fb4b71e1f1c1d67394431fb7362756863"
+
+workbox-google-analytics@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-google-analytics/download/workbox-google-analytics-3.0.1.tgz#693a4a8d2f534796b5af172af01132a9691bddb7"
+  dependencies:
+    workbox-background-sync "^3.0.1"
+    workbox-core "^3.0.1"
+    workbox-routing "^3.0.1"
+    workbox-strategies "^3.0.1"
+
+workbox-precaching@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-precaching/download/workbox-precaching-3.0.1.tgz#768b4dec2a6b22e8c58176aaadab0c4bb9dcdde2"
+  dependencies:
+    workbox-core "^3.0.1"
+
+workbox-routing@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-routing/download/workbox-routing-3.0.1.tgz#2784d8b0eb41de57bfb330b09336b60eb12505b2"
+  dependencies:
+    workbox-core "^3.0.1"
+
+workbox-strategies@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-strategies/download/workbox-strategies-3.0.1.tgz#c2dad35bfec71839087a8aba453282600c2cb4ab"
+  dependencies:
+    workbox-core "^3.0.1"
+
+workbox-sw@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-sw/download/workbox-sw-3.0.1.tgz#c030413809ab9d558949a691eb6428ab9d621e09"
+
+workbox-webpack-plugin@^3.0.0-beta.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/workbox-webpack-plugin/download/workbox-webpack-plugin-3.0.1.tgz#e7024eda8ea7c557d06d2e086d999b475b3da98a"
+  dependencies:
+    json-stable-stringify "^1.0.1"
+    workbox-build "^3.0.1"
 
 worker-farm@^1.5.2:
   version "1.6.0"
