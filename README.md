@@ -78,6 +78,4 @@ https://fpass.ga
 
 ## 许可
 
-[GPL-3.0](LICENSE)
-
-Copyright © 2017-2018 fpass
+[GPL-3.0](LICENSE) © 2017-2018 fpass
