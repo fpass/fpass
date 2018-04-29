@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.0",
-    "clipboard": "^1.7.1",
+    "clipboard": "^2.0.1",
     "js-sha512": "^0.7.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
