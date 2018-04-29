@@ -1,8 +1,4 @@
 /*
   Cache-Control: no-cache
-/assets/*
-  Cache-Control: max-age=315360000
-/js/*.js
-  Cache-Control: max-age=315360000
-/*.css
+/static/*
   Cache-Control: max-age=315360000

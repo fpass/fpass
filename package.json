@@ -3,24 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build",
-    "dev": "vue-cli-service serve --open"
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "precommit": "pretty-quick --staged"
   },
   "dependencies": {
+    "bootstrap": "^4.1.0",
     "clipboard": "^1.7.1",
     "js-sha512": "^0.7.1",
-    "muse-ui": "^2.1.0",
-    "register-service-worker": "^1.0.0",
-    "vue": "^2.5.16",
-    "vue-i18n": "^7.4.0",
-    "vue-router": "^3.0.1"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "reactstrap": "^5.0.0",
+    "styled-components": "^3.2.5"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-beta.6",
-    "@vue/cli-plugin-pwa": "^3.0.0-beta.6",
-    "@vue/cli-service": "^3.0.0-beta.6",
-    "less": "^3.0.2",
-    "less-loader": "^4.0.5",
-    "vue-template-compiler": "^2.5.13"
+    "husky": "^0.14.3",
+    "prettier": "^1.12.1",
+    "pretty-quick": "^1.4.1",
+    "react-scripts": "1.1.1"
   }
 }
