@@ -14,9 +14,9 @@ import {
   ModalBody,
   ModalFooter,
 } from 'reactstrap'
-import rules from '../../service/rules'
-import encrypt from '../../service/encrypt'
-import scrollIntoView from '../../util/scrollIntoView'
+import rules from '../../common/rules'
+import encrypt from '../../common/encrypt'
+import scrollIntoView from '../../common/scrollIntoView'
 
 const Wrap = styled(Container)`
   height: 100vh;
