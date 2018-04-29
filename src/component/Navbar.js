@@ -1,6 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { injectGlobal } from 'styled-components'
 import { Container, Navbar, NavbarBrand } from 'reactstrap'
+
+injectGlobal`
+  body {
+    padding-top: 56px;
+  }
+`
 
 const Wrap = styled(Navbar).attrs({
   dark: true,

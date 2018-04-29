@@ -14,23 +14,18 @@ import {
   ModalBody,
   ModalFooter,
 } from 'reactstrap'
-import Navbar from '../component/Navbar'
 import rules from '../common/rules'
 import encrypt from '../common/encrypt'
 import scrollIntoView from '../common/scrollIntoView'
 
-const Wrap = styled(Container)`
-  padding-top: 100px;
-  padding-bottom: 44px;
-`
-
 const PassForm = styled(Form)`
   max-width: 480px;
   margin: 0 auto;
+  padding: 40px 0;
 `
 
 const EmptyInput = styled(Input)`
-  display: none
+  display: none;
 `
 
 export default class Home extends Component {
@@ -45,15 +40,14 @@ export default class Home extends Component {
   componentDidMount() {
     this.clipboard()
     this.keyup()
-    scrollIntoView(ReactDOM.findDOMNode(this.refs.wrap).querySelectorAll('input'))
+    scrollIntoView(ReactDOM.findDOMNode(this.refs.passForm).querySelectorAll('input'))
   }
 
   render() {
     const { selected, modal } = this.state
     return (
-      <Wrap ref="wrap">
-        <Navbar />
-        <PassForm>
+      <Container>
+        <PassForm ref="passForm">
           <FormGroup>
             <Label>域名</Label>
             <Input type="select" onChange={event => this.setState({ selected: ~~event.target.value })} value={selected}>
@@ -64,20 +58,16 @@ export default class Home extends Component {
               ))}
             </Input>
           </FormGroup>
-          {selected === 0 ? (
-            <div>
-              <FormGroup>
-                <Label>域名</Label>
-                <Input type="text" onInput={event => this.setState({ domain: event.target.value })} />
-              </FormGroup>
-              <FormGroup>
-                <Label>长度</Label>
-                <Input type="number" onInput={event => this.setState({ length: event.target.value })} />
-              </FormGroup>
-            </div>
-          ) : (
-            ''
-          )}
+          <div style={{ display: selected === 0 ? 'block' : 'none' }}>
+            <FormGroup>
+              <Label>域名</Label>
+              <Input type="text" onInput={event => this.setState({ domain: event.target.value })} />
+            </FormGroup>
+            <FormGroup>
+              <Label>长度</Label>
+              <Input type="number" onInput={event => this.setState({ length: event.target.value })} />
+            </FormGroup>
+          </div>
           <FormGroup>
             <Label>密码</Label>
             <Input
@@ -85,10 +75,10 @@ export default class Home extends Component {
               autoComplete="on"
               onInput={event => this.setState({ password: event.target.value })}
             />
-            {/* 当只有一个密码框时，回车会触发 form 提交，加个隐藏框解决 */}
+            {/* 当只有一个密码框时，回车会触发 form 提交，加个隐藏的 input 解决 */}
             <EmptyInput />
           </FormGroup>
-          <Button color="secondary" ref="submitForm" onClick={this.submitForm}>
+          <Button color="secondary" ref="submitButton" onClick={this.submitForm}>
             确定
           </Button>
         </PassForm>
@@ -101,7 +91,7 @@ export default class Home extends Component {
             </Button>
           </ModalFooter>
         </Modal>
-      </Wrap>
+      </Container>
     )
   }
 
@@ -131,12 +121,12 @@ export default class Home extends Component {
   }
 
   clipboard() {
-    new Clipboard(ReactDOM.findDOMNode(this.refs.submitForm), { text: () => this.encrypt() })
+    new Clipboard(ReactDOM.findDOMNode(this.refs.submitButton), { text: () => this.encrypt() })
   }
 
   keyup() {
     const handlers = {
-      13: () => ReactDOM.findDOMNode(this.refs.submitForm).click(),
+      13: () => ReactDOM.findDOMNode(this.refs.submitButton).click(),
       27: () => this.setState({ modal: false }),
     }
     window.addEventListener('keyup', ({ keyCode }) => handlers[keyCode] && handlers[keyCode]())
