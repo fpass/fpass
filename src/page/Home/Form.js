@@ -101,6 +101,7 @@ export default class Home extends Component {
   }
 
   submitForm = event => {
+    event.preventDefault()
     if (this.encrypt()) {
       this.setState({ modal: true })
     }
