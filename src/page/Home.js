@@ -18,9 +18,16 @@ import rules from '../common/rules'
 import encrypt from '../common/encrypt'
 import scrollIntoView from '../common/scrollIntoView'
 
+const Wrapper = styled(Container)`
+  min-height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
 const PassForm = styled(Form)`
   max-width: 480px;
-  margin: 0 auto;
+  width: 100%;
   padding: 40px 0;
 `
 
@@ -46,7 +53,7 @@ export default class Home extends Component {
   render() {
     const { selected, modal } = this.state
     return (
-      <Container>
+      <Wrapper>
         <PassForm ref="passForm">
           <FormGroup>
             <Label>域名</Label>
@@ -90,7 +97,7 @@ export default class Home extends Component {
             </Button>
           </ModalFooter>
         </Modal>
-      </Container>
+      </Wrapper>
     )
   }
 
