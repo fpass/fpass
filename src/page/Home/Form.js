@@ -82,6 +82,8 @@ export default class Home extends Component {
               autoComplete="on"
               onInput={event => this.setState({ password: event.target.value })}
             />
+            {/* 当只有一个 input 框时，回车会导致 form 提交，所以多加个隐藏框 */}
+            <Input style={{display: 'none'}} />
           </FormGroup>
           <Button color="secondary" ref="submitForm" onClick={this.submitForm}>
             确定
@@ -101,7 +103,6 @@ export default class Home extends Component {
   }
 
   submitForm = event => {
-    event.preventDefault()
     if (this.encrypt()) {
       this.setState({ modal: true })
     }
