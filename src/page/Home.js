@@ -14,21 +14,23 @@ import {
   ModalBody,
   ModalFooter,
 } from 'reactstrap'
-import rules from '../../common/rules'
-import encrypt from '../../common/encrypt'
-import scrollIntoView from '../../common/scrollIntoView'
+import Navbar from '../component/Navbar'
+import rules from '../common/rules'
+import encrypt from '../common/encrypt'
+import scrollIntoView from '../common/scrollIntoView'
 
 const Wrap = styled(Container)`
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 44px;
 `
 
-const Box = styled(Form)`
+const PassForm = styled(Form)`
   max-width: 480px;
-  width: 100%;
   margin: 0 auto;
+`
+
+const EmptyInput = styled(Input)`
+  display: none
 `
 
 export default class Home extends Component {
@@ -50,7 +52,8 @@ export default class Home extends Component {
     const { selected, modal } = this.state
     return (
       <Wrap ref="wrap">
-        <Box>
+        <Navbar />
+        <PassForm>
           <FormGroup>
             <Label>域名</Label>
             <Input type="select" onChange={event => this.setState({ selected: ~~event.target.value })} value={selected}>
@@ -82,13 +85,13 @@ export default class Home extends Component {
               autoComplete="on"
               onInput={event => this.setState({ password: event.target.value })}
             />
-            {/* 当只有一个 input 框时，回车会导致 form 提交，所以多加个隐藏框 */}
-            <Input style={{display: 'none'}} />
+            {/* 当只有一个密码框时，回车会触发 form 提交，加个隐藏框解决 */}
+            <EmptyInput />
           </FormGroup>
           <Button color="secondary" ref="submitForm" onClick={this.submitForm}>
             确定
           </Button>
-        </Box>
+        </PassForm>
         <Modal isOpen={modal} centered={true}>
           <ModalHeader>提示</ModalHeader>
           <ModalBody>密码已复制到剪贴板</ModalBody>
