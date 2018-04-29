@@ -8,7 +8,7 @@ injectGlobal`
   }
 `
 
-const Wrap = styled(Navbar).attrs({
+const Wrapper = styled(Navbar).attrs({
   dark: true,
   fixed: 'top',
 })`
@@ -35,7 +35,7 @@ const GithubLink = styled.a.attrs({
 `
 
 export default () => (
-  <Wrap>
+  <Wrapper>
     <Container>
       <NavbarBrand href="/">FINAL PASS</NavbarBrand>
       <GithubLink>
@@ -47,5 +47,5 @@ export default () => (
         </svg>
       </GithubLink>
     </Container>
-  </Wrap>
+  </Wrapper>
 )

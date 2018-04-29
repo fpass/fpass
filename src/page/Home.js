@@ -60,7 +60,6 @@ export default class Home extends Component {
           </FormGroup>
           <div style={{ display: selected === 0 ? 'block' : 'none' }}>
             <FormGroup>
-              <Label>域名</Label>
               <Input type="text" onInput={event => this.setState({ domain: event.target.value })} />
             </FormGroup>
             <FormGroup>
