@@ -23,6 +23,10 @@ const Wrapper = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 `
 
 const PassForm = styled(Form)`
