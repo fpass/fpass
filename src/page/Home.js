@@ -32,6 +32,7 @@ const Wrapper = styled(Container)`
 const PassForm = styled(Form)`
   max-width: 480px;
   width: 100%;
+  height: 380px;
   padding: 15px 0;
 `
 
