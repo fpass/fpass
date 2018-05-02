@@ -21,10 +21,11 @@ after_success:
     git config user.email 'i@zhuweiyou.com';
     git push https://${GITEE_TOKEN}@gitee.com/fpass/fpass.git master -f;
     cd build;
+    cp index.html 404.html;
     git init;
     git add .;
     git commit -m 'build';
-    git push https://${GH_TOKEN}@github.com/fpass/fpass.git master:gh-pages -f;
+    git push https://${GH_TOKEN}@github.com/fpass/fpass.github.io.git master -f;
     fi
 
 branches:
