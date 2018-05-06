@@ -37,7 +37,7 @@ const GithubLink = styled.a.attrs({
 export default () => (
   <Wrapper>
     <Container>
-      <NavbarBrand href="/">FINAL PASS</NavbarBrand>
+      <NavbarBrand href="/">FPASS</NavbarBrand>
       <GithubLink>
         <svg height="32" version="1.1" viewBox="0 0 16 16" width="32">
           <path

@@ -23,7 +23,7 @@ https://fpass.github.io
 
 ## 使用
 
-访问 [FINAL PASS - 密码安全管理工具](https://fpass.github.io)，选择域名，输入安全主密码，点击确定即可生成
+访问 https://fpass.github.io 选择域名，输入安全主密码，点击确定即可生成
 
 生成的密码将被复制到剪贴板，页面不做展示，可直接粘贴到网站的密码框中使用
 
