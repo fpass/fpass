@@ -34,10 +34,6 @@ const PassForm = styled(Form)`
   padding: 15px 0;
 `
 
-const EmptyInput = styled(Input)`
-  display: none;
-`
-
 export default class Home extends Component {
   state = {
     selected: 0,
@@ -85,7 +81,7 @@ export default class Home extends Component {
               onInput={event => this.setState({ password: event.target.value })}
             />
             {/* 当只有一个密码框时，回车会触发 form 提交，加个隐藏的 input 解决 */}
-            <EmptyInput />
+            <Input style={{display: 'none'}} />
           </FormGroup>
           <Button color="secondary" ref="submitButton" onClick={this.submitForm}>
             确定
