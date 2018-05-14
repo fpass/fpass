@@ -1,4 +1,4 @@
-const rules = [
+export const rules = [
   { name: '腾讯企业邮', domain: 'exmail.qq.com', length: 32 },
   { name: 'segmentfault', domain: 'segmentfault.com', length: 32 },
   { name: '简书', domain: 'jianshu.com', length: 32 },
@@ -35,5 +35,3 @@ const rules = [
 
 rules.sort((a, b) => (a.domain <= b.domain ? -1 : 1))
 rules.unshift({ name: '自定义', domain: '' })
-
-export default rules

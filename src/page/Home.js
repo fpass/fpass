@@ -14,16 +14,14 @@ import {
   ModalBody,
   ModalFooter,
 } from 'reactstrap'
-import rules from '../common/rules'
-import encrypt from '../common/encrypt'
-import scrollIntoView from '../common/scrollIntoView'
+import { rules, encrypt, scrollIntoView } from '../common'
 
 const Wrapper = styled(Container)`
   min-height: calc(100vh - 56px);
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   @media screen and (max-width: 767px) {
     display: block;
   }

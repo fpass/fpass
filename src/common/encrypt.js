@@ -1,6 +1,6 @@
 import sha512 from 'js-sha512'
 
-export default ({ domain, salt, length }) => {
+export const encrypt = ({ domain, salt, length }) => {
   if (!domain || !salt || length <= 2) {
     return ''
   }
