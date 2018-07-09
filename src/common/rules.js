@@ -31,6 +31,7 @@ export const rules = [
   { name: '小米', domain: 'mi.com', length: 16 },
   { name: '华为账号', domain: 'vmall.com', length: 32 },
   { name: '网易', domain: '163.com', length: 16 },
+  { name: '学信网', domain: 'chsi.com.cn', length: 30 },
 ]
 
 rules.sort((a, b) => (a.domain <= b.domain ? -1 : 1))
