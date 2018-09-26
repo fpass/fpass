@@ -20,7 +20,7 @@
     "styled-components": "^3.2.5"
   },
   "devDependencies": {
-    "husky": "^0.14.3",
+    "husky": "^1.0.0",
     "prettier": "^1.12.1",
     "pretty-quick": "^1.4.1",
     "react-scripts": "1.1.1"
