@@ -17,7 +17,7 @@
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "reactstrap": "^6.1.0",
-    "styled-components": "^3.2.5"
+    "styled-components": "^4.0.2"
   },
   "devDependencies": {
     "husky": "^0.14.3",
