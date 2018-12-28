@@ -9,7 +9,6 @@
 [![GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 [![Sync Gitee](https://img.shields.io/badge/sync-gitee-green.svg)](https://gitee.com/fpass/fpass)
 [![Build Status](https://travis-ci.org/fpass/fpass.svg?branch=master)](https://travis-ci.org/fpass/fpass)
-[![Greenkeeper badge](https://badges.greenkeeper.io/fpass/fpass.svg)](https://greenkeeper.io)
 
 只需记住一个足够长的安全主密码，无需安装任何插件、应用，就可以安全管理所有网站的密码
 
